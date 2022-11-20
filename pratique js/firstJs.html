@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function addHTML(){
+            document.getElementById('testHTML').innerHTML += document.getElementById('txtHTML').value;
+            document.getElementById('textHTML').value ='';
+        }
+        function supprHTML(){
+            document.getElementById('testHTML').innerHTML ='';
+        }
+    </script>
+    <style type="text/css">
+        textarea{
+            width: 80%;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="testHTML">
+    </div>
+    <div id="editCode">
+        <fieldset>
+            <legend>code HTML</legend>
+           <textarea  id="txtHTML"></textarea>
+           <input type="button" value="Insert la portion HTML" onclick="addHTML();"/>
+           <input type="button" value="Supprimer la portion" onclick="supprHTML();">
+        </fieldset>
+        <fieldset>
+            <legend>code Js</legend>
+            <textarea id="txtJS"></textarea>
+            <input type="button" value="Insert la portion JS" onclick="addJS();"/>
+        </fieldset>
+    </div>
+</body>
+</html>

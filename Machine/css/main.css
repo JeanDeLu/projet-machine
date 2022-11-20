@@ -1,0 +1,41 @@
+body{
+    background-color: rgba(53, 36, 82, 0.185);
+}
+#div_parent{
+    margin: 5% 41%;
+    background-color: white;
+    border-radius: 17px ;
+    padding:5px;
+}
+#child_1{
+    margin: 5px;
+    width: 96%;
+    height: 160px;
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: right;
+}
+
+table{
+    margin: 8px;
+}
+td{
+    padding:10px 15px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.td1{
+    border-radius: 10px;
+    background-color: black;
+}
+.td2{
+    border-radius: 10px;
+    background-color: rgb(226, 132, 9);
+}
+#croix{
+    background-color:white;
+    padding:5px 8px;
+    color:black;
+    border-radius: 15px 5px 5px 15px;
+}
