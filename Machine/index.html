@@ -4,45 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>machine </title>
+    <title>machine calculer </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div id="div_parent">
-        <div id="child_1">00</div>
+        <div id="child_1">
+            <img src="Img/bare.PNG" alt="Image bare">
+            <input type="text" name="" id="screen" placeholder="0.0" style="text-align: right;">
+        </div>
         <div >
             <table>
                 <tr>
-                    <td class="td1">c</td>
-                    <td class="td1"><div id="croix">x</div></td>
-                    <td class="td1">%</td>
-                    <td class="td2">/</td>
+                    <td class="td0"><input type="button" value="c" onclick="clr()" class="input0"></td>
+                    <td class="td0"><input type="button" value="x" onclick="" class="input3"></td>
+                    <td class="td0"><input type="button" value="%" onclick="num('%')" class="input0"></td>
+                    <td class="td2"><input type="button" value="/" onclick="num('/')" class="input2"></td>
                 </tr>
                 <tr>
-                    <td class="td1">7</td>
-                    <td class="td1">8</td>
-                    <td class="td1">9</td>
-                    <td class="td2" >x</td>
+                    <td class="td1"><input type="button" value="7" onclick="num('7')" class="input1"></td>
+                    <td class="td1"><input type="button" value="8" onclick="num('8')" class="input1"></td>
+                    <td class="td1"><input type="button" value="9" onclick="num('9')" class="input1"></td>
+                    <td class="td2" ><input type="button" value="*" onclick="num('*')"  class="input2"></td>
                 </tr>
                 <tr>
-                    <td class="td1">4</td>
-                    <td class="td1">5</td>
-                    <td class="td1">6</td>
-                    <td class="td2">-</td>
+                    <td class="td1"><input type="button" value="4" onclick="num('4')" class="input1"></td>
+                    <td class="td1"><input type="button" value="5" onclick="num('5')" class="input1"></td>
+                    <td class="td1"><input type="button" value="6" onclick="num('6')" class="input1"></td>
+                    <td class="td2"><input type="button" value="-" onclick="num('-')" class="input2"></td>
                 </tr>
                 <tr>
-                    <td class="td1">1</td>
-                    <td class="td1">2</td>
-                    <td class="td1">3</td>
-                    <td class="td2">+</td>
+                    <td class="td1"><input type="button" value="1" onclick="num('1')" class="input1"></td>
+                    <td class="td1"><input type="button" value="2" onclick="num('2')"  class="input1"></td>
+                    <td class="td1"><input type="button" value="3" onclick="num('3')" class="input1"></td>
+                    <td class="td2"><input type="button" value="+" onclick="num('+')" class="input2"></td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="td1">0</td>
-                    <td class="td1">.</td>
-                    <td class="td2">=</td>
+                    <td colspan="2" class="td1"><input type="button" onclick="num('0')" value="0" class="input1"></td>
+                    <td class="td1"><input type="button" value="." onclick="num('.')" class="input1"></td>
+                    <td class="td2"><input type="button" value="=" onclick="equal()" class="input2"></td>
                 </tr>
             </table>
         </div>
     </div>
+    <p>ANDRY DESIGNER</p>
+    <script src="js/main.js"></script>
 </body>
 </html>
